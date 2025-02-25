@@ -1,0 +1,40 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.1">
+    <servlet>
+        <servlet-name>BookServlet</servlet-name>
+        <servlet-class>BookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/books</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+
+        <servlet-name>MemberServlet</servlet-name>
+        <servlet-class>MemberServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MemberServlet</servlet-name>
+        <url-pattern>/members</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BorrowingServlet</servlet-name>
+        <servlet-class>BorrowingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BorrowingServlet</servlet-name>
+        <url-pattern>/borrow</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReturnBookServlet</servlet-name>
+        <servlet-class>ReturnBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReturnBookServlet</servlet-name>
+        <url-pattern>/borrow/return</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
